@@ -8,16 +8,34 @@
   <script src="index.js"></script>
 </head>
 <body>
-  <!-- <nav id="" class="">Rodada: '' Pergunta: '' Acumulado: ''</nav> -->
+  <section id="welcome" class="full">
+    <div class="column">
+      <h1>Bem Vindo(a) ao jogo Show do Milhão</h1>
+      <h3>Vamos Jogar?</h3>
+      <div class="row">
+        <a href="#instrucoes"><button class="btnInicio">Instruções</button></a>
+      </div>
+    </div>
+  </section>
+  <section id="instrucoes" class="full column">
+    <h1>Instruções</h1>
+    <p style="font-size: 25px">Para jogar este jogo você só vai precisar de um papel, uma caneta e conhecimento!</p>
+    <p style="font-size: 20px">As respostas se encontram no final do jogo e estão ordenadas de 1 a 4, então basta anotar o número da sua resposta para cada pergunta (que também estão ordenadas númericamente, de 1 a 15, mais a Pergunta Final) e conferir no final.<br/><br/>O quadro de ajuda funciona igual ao do jogo televisivo: você pode pedir ajuda aos universitários, à plateia por meio das placas e pelas cartas do baralho (lembrando que você só pode usar essas ajudas uma vez <b>por jogo</b>). Você também conta com a opção de pular a pergunta, podendo pular no máximo três perguntas <b>por jogo</b>.</p>
+    <p style="font-size: 20px">Vale lembrar que essas ajudas não podem ser usadas na <b>Pergunta Final</b>.</p>
+    <div class="row">
+      <a href="#welcome"><button class="btnInicio">Inicio</button></a>
+      <a href="#rodada1"><button class="btnInicio">Jogar</button></a>
+    </div>
+  </section>
   <div id="rodada1" class="rodada">
     <section id="p1_1" class="p1">
-      <p class="pergunta">Pergunta 1.1</p>
+      <p class="pergunta">Em que estado brasileiro nasceu a apresentadora Xuxa?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.1.1</li>
-          <li class="r2">Resposta 2.1.1</li>
-          <li class="r3">Resposta 3.1.1</li>
-          <li class="r4">Resposta 4.1.1</li>
+          <li class="r1">Rio de Janeiro</li>
+          <li class="r2">Rio Grande do Sul</li>
+          <li class="r3">Santa Catarina</li>
+          <li class="r4">Goiás</li>
         </ul>
         <div class="ajuda grid">
           <img src="img/Universitarios.svg" />
@@ -28,15 +46,19 @@
           <img src="img/jump.svg" />
         </div>
       </div>
+      <div class="row">
+        <a href="#instrucoes"><button class="btnJogo">Anterior</button></a>
+        <a href="#p2_1"><button class="btnJogo">Proxíma</button></a>
+      </div>
     </section>
     <section id="p2_1" class="p2">
-      <p class="pergunta">Pergunta 2.1</p>
+      <p class="pergunta">Qual era o apelido da cantora Elis Regina?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.2.1</li>
-          <li class="r2">Resposta 2.2.1</li>
-          <li class="r3">Resposta 3.2.1</li>
-          <li class="r4">Resposta 4.2.1</li>
+          <li class="r1">Gauchinha</li>
+          <li class="r2">Paulistinha</li>
+          <li class="r3">Pimentinha</li>
+          <li class="r4">Andorinha</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -46,16 +68,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p1_1"><button class="btnJogo">Anterior</button></a>
+        <a href="#p3_1"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p3_1" class="p3">
-      <p class="pergunta">Pergunta 3.1</p>
+      <p class="pergunta">Fidel Castro nasceu em que país?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.3.1</li>
-          <li class="r2">Resposta 2.3.1</li>
-          <li class="r3">Resposta 3.3.1</li>
-          <li class="r4">Resposta 4.3.1</li>
+          <li class="r1">Jamaica</li>
+          <li class="r2">Cuba</li>
+          <li class="r3">El Salvador</li>
+          <li class="r4">México</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -65,16 +91,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p2_1"><button class="btnJogo">Anterior</button></a>
+        <a href="#p4_1"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p4_1" class="p4">
-      <p class="pergunta">Pergunta 4.1</p>
+      <p class="pergunta">Como é chamada a cantora que representa o papel principal em uma ópera?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.4.1</li>
-          <li class="r2">Resposta 2.4.1</li>
-          <li class="r3">Resposta 3.4.1</li>
-          <li class="r4">Resposta 4.4.1</li>
+          <li class="r1">Primeira Dama</li>
+          <li class="r2">Dona-Prima</li>
+          <li class="r3">Prima-Dona</li>
+          <li class="r4">Dama-Prima</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -85,15 +115,19 @@
           <img class="jump" src="img/jump.svg" />
         </div>
       </div>
+      <div class="row">
+        <a href="#p3_1"><button class="btnJogo">Anterior</button></a>
+        <a href="#p5_1"><button class="btnJogo">Proxíma</button></a>
+      </div>
     </section>
     <section id="p5_1" class="p5">
-      <p class="pergunta">Pergunta 5.1</p>
+      <p class="pergunta">Quem é o patrono do exército brasileiro?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.5.1</li>
-          <li class="r2">Resposta 2.5.1</li>
-          <li class="r3">Resposta 3.5.1</li>
-          <li class="r4">Resposta 4.5.1</li>
+          <li class="r1">Marechal Deodoro</li>
+          <li class="r2">Barão de Mauá</li>
+          <li class="r3">Duque de Caxias</li>
+          <li class="r4">Marquês de Pombal</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -103,18 +137,22 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p4_1"><button class="btnJogo">Anterior</button></a>
+        <a href="#rodada2"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
   </div>
   <div id="rodada2" class="rodada">
     <section id="p1_2" class="p1">
-      <p class="pergunta">Pergunta 1.2</p>
+      <p class="pergunta">Em qual estádio Pelé marcou seu milésimo gol?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.1.2</li>
-          <li class="r2">Resposta 2.1.2</li>
-          <li class="r3">Resposta 3.1.2</li>
-          <li class="r4">Resposta 4.1.2</li>
+          <li class="r1">Morumbi</li>
+          <li class="r2">Pacaembu</li>
+          <li class="r3">Maracanã</li>
+          <li class="r4">Mineirão</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -124,16 +162,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p5_1"><button class="btnJogo">Anterior</button></a>
+        <a href="#p2_2"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p2_2" class="p2">
-      <p class="pergunta">Pergunta 2.2</p>
+      <p class="pergunta">Quem fundou a fábrica de automóveis Ford?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.2.2</li>
-          <li class="r2">Resposta 2.2.2</li>
-          <li class="r3">Resposta 3.2.2</li>
-          <li class="r4">Resposta 4.2.2</li>
+          <li class="r1">Harrison Ford</li>
+          <li class="r2">Gerald Ford</li>
+          <li class="r3">Henry Ford</li>
+          <li class="r4">Anna Ford</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -143,16 +185,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p1_2"><button class="btnJogo">Anterior</button></a>
+        <a href="#p3_2"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p3_2" class="p3">
-      <p class="pergunta">Pergunta 3.2</p>
+      <p class="pergunta">Qual lugar é também chamado de Santa Sé?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.3.2</li>
-          <li class="r2">Resposta 2.3.2</li>
-          <li class="r3">Resposta 3.3.2</li>
-          <li class="r4">Resposta 4.3.2</li>
+          <li class="r1">Veneza</li>
+          <li class="r2">Vitória</li>
+          <li class="r3">Vancouver</li>
+          <li class="r4">Vaticano</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -162,16 +208,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p2_2"><button class="btnJogo">Anterior</button></a>
+        <a href="#p4_2"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p4_2" class="p4">
-      <p class="pergunta">Pergunta 4.2</p>
+      <p class="pergunta">Quem tem por lema a frase: “Sempre alerta”?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.4.2</li>
-          <li class="r2">Resposta 2.4.2</li>
-          <li class="r3">Resposta 3.4.2</li>
-          <li class="r4">Resposta 4.4.2</li>
+          <li class="r1">Médicos</li>
+          <li class="r2">Escoteiros</li>
+          <li class="r3">Bombeiros</li>
+          <li class="r4">Policiais</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -182,15 +232,19 @@
           <img class="jump" src="img/jump.svg" />
         </div>
       </div>
+      <div class="row">
+        <a href="#p3_2"><button class="btnJogo">Anterior</button></a>
+        <a href="#p5_2"><button class="btnJogo">Proxíma</button></a>
+      </div>
     </section>
     <section id="p5_2" class="p5">
-      <p class="pergunta">Pergunta 5.2</p>
+      <p class="pergunta">Como se chama o lugar onde são armazenadas as balas de um revólver?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.5.2</li>
-          <li class="r2">Resposta 2.5.2</li>
-          <li class="r3">Resposta 3.5.2</li>
-          <li class="r4">Resposta 4.5.2</li>
+          <li class="r1">Cano</li>
+          <li class="r2">Tambor</li>
+          <li class="r3">Pente</li>
+          <li class="r4">Gatilho</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -200,18 +254,22 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p4_2"><button class="btnJogo">Anterior</button></a>
+        <a href="#p1_3"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
   </div>
   <div id="rodada3" class="rodada">
     <section id="p1_3" class="p1">
-      <p class="pergunta">Pergunta 1.3</p>
+      <p class="pergunta">Qual cantora tinha o apelido de “Ternurinha” na época da jovem guarda?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.1.3</li>
-          <li class="r2">Resposta 2.1.3</li>
-          <li class="r3">Resposta 3.1.3</li>
-          <li class="r4">Resposta 4.1.3</li>
+          <li class="r1">Silvinha</li>
+          <li class="r2">Wanderléia</li>
+          <li class="r3">Gretchen</li>
+          <li class="r4">Martinha</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -221,16 +279,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p5_2"><button class="btnJogo">Anterior</button></a>
+        <a href="#p2_3"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p2_3" class="p2">
-      <p class="pergunta">Pergunta 2.3</p>
+      <p class="pergunta">Quem fundou a Microsoft?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.2.3</li>
-          <li class="r2">Resposta 2.2.3</li>
-          <li class="r3">Resposta 3.2.3</li>
-          <li class="r4">Resposta 4.2.3</li>
+          <li class="r1">Steve Jobs</li>
+          <li class="r2">Akio Morita</li>
+          <li class="r3">Bill Gates</li>
+          <li class="r4">Elon Musk</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -240,16 +302,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p1_3"><button class="btnJogo">Anterior</button></a>
+        <a href="#p3_3"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p3_3" class="p3">
-      <p class="pergunta">Pergunta 3.3</p>
+      <p class="pergunta">Quem foi o assassino de Lee Harvey Oswald?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.3.3</li>
-          <li class="r2">Resposta 2.3.3</li>
-          <li class="r3">Resposta 3.3.3</li>
-          <li class="r4">Resposta 4.3.3</li>
+          <li class="r1">Jack Ruby</li>
+          <li class="r2">John Wilkes</li>
+          <li class="r3">Pat Garret</li>
+          <li class="r4">Charlotte Corday</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -259,16 +325,20 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p2_3"><button class="btnJogo">Anterior</button></a>
+        <a href="#p4_3"><button class="btnJogo">Proxíma</button></a>
       </div>
     </section>
     <section id="p4_3" class="p4">
-      <p class="pergunta">Pergunta 4.3</p>
+      <p class="pergunta">Joana Prado é o nome verdadeiro de qual artista?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.4.3</li>
-          <li class="r2">Resposta 2.4.3</li>
-          <li class="r3">Resposta 3.4.3</li>
-          <li class="r4">Resposta 4.4.3</li>
+          <li class="r1">Tiazinha</li>
+          <li class="r2">Feiticeira</li>
+          <li class="r3">Lady Lu</li>
+          <li class="r4">Sheila Mello</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -279,15 +349,19 @@
           <img class="jump" src="img/jump.svg" />
         </div>
       </div>
+      <div class="row">
+        <a href="#p3_3"><button class="btnJogo">Anterior</button></a>
+        <a href="#p5_3"><button class="btnJogo">Proxíma</button></a>
+      </div>
     </section>
     <section id="p5_3" class="p5">
-      <p class="pergunta">Pergunta 5.3</p>
+      <p class="pergunta" style="font-size:28.5px">Qual foi o placar da final da Copa de 98, quando o Brasil perdeu para a França?</p>
       <div class="row">
         <ul class="respostas">
-          <li class="r1">Resposta 1.5.3</li>
-          <li class="r2">Resposta 2.5.3</li>
-          <li class="r3">Resposta 3.5.3</li>
-          <li class="r4">Resposta 4.5.3</li>
+          <li class="r1">Dois a Zero</li>
+          <li class="r2">Três a Zero</li>
+          <li class="r3">Três a Dois</li>
+          <li class="r4">Dois a Um</li>
         </ul>
         <div class="ajuda grid">
           <img id="uni" src="img/Universitarios.svg" />
@@ -297,19 +371,63 @@
           <img class="jump" src="img/jump.svg" />
           <img class="jump" src="img/jump.svg" />
         </div>
+      </div>
+      <div class="row">
+        <a href="#p4_3"><button class="btnJogo">Anterior</button></a>
+        <a href="#p16"><button class="btnJogo">Pergunta Final</button></a>
       </div>
     </section>
   </div>
   <div id="final" class="">
     <section id="p16" class="p16">
-      <p class="pergunta">Pergunta do Milhão</p>
+      <p class="pergunta">Quem realizou a primeira cirurgia de ponte de safena no Brasil?</p>
       <ul class="resposta">
-        <li class="resp">Resposta do Milhão 1</li>
-        <li class="resp">Resposta do Milhão 2</li>
-        <li class="resp">Resposta do Milhão 3</li>
-        <li class="resp">Resposta do Milhão 4</li>
+        <li class="resp">Dr. Zerbini</li>
+        <li class="resp">Dr. Fritz</li>
+        <li class="resp">Dr. Jatene</li>
+        <li class="resp">Dr. Calligari</li>
       </ul>
+      <div class="row">
+        <a href="#p5_3"><button class="btnJogo">Anterior</button></a>
+        <a href="#cartilhaRespostas"><button class="btnJogo">Ver Respostas</button></a>
+      </div>
     </section>
   </div>
+  <section id="cartilhaRespostas" class="full">
+    <div class="column">
+      <h1>Respostas</h1>
+      <div class="row">
+        <div class="column">
+          <ul style="margin:0 3vw;font-size: 25px;">
+            <li>Pergunta 01 - Resposta 2</li>
+            <li>Pergunta 02 - Resposta 3</li>
+            <li>Pergunta 03 - Resposta 2</li>
+            <li>Pergunta 04 - Resposta 3</li>
+            <li>Pergunta 05 - Resposta 3</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul style="margin:0 3vw;font-size: 25px;">
+            <li>Pergunta 06 - Resposta 3</li>
+            <li>Pergunta 07 - Resposta 3</li>
+            <li>Pergunta 08 - Resposta 4</li>
+            <li>Pergunta 09 - Resposta 2</li>
+            <li>Pergunta 10 - Resposta 2</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul style="margin:0 3vw;font-size: 25px;">
+            <li>Pergunta 11 - Resposta 2</li>
+            <li>Pergunta 12 - Resposta 3</li>
+            <li>Pergunta 13 - Resposta 1</li>
+            <li>Pergunta 14 - Resposta 2</li>
+            <li>Pergunta 15 - Resposta 2</li>
+          </ul>
+        </div>
+      </div>
+      <p>Pergunta Final - Resposta 3</p>
+      <a href="#welcome"><button class="btnJogo">Jogar de novo!</button></a>
+    </div>
+    </section>
 </body>
 </html>
