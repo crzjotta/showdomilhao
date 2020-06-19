@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  background: #1d0f7a;
+}
+
+/* nav {
+  position: fixed;
+  width: 100vw;
+  height: 5vh;
+  top: 0;
+  padding-top: 1vh;
+  background-color: rgba(245, 245, 245, 1);
+  text-align: center;
+  text-justify: center;
+  font-size: 25px;
+} */
+
+li {
+  list-style: none;
+}
+
+/* .rodada {} */
+
+.p1, .p2, .p3, .p4, .p5 {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 93vh;
+  margin-top: 7vh;
+}
+
+.pergunta {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 90vw;
+  height: auto;
+  background: #B30000;
+  box-shadow: inset 0px 10px 10px #FF0000, inset 0px -10px 10px #FF0000;
+  border-radius: 32px;
+  color: whitesmoke;
+  margin: 30px;
+  padding: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.respostas {
+  display: flex;
+  flex-direction: column;
+}
+
+.r1, .r2, .r3, .r4 {
+  justify-self: left;
+  align-self: center;
+  text-align: center;
+  width: 40vw;
+  height: auto;
+  background: #B30000;
+  box-shadow: inset 0px 10px 10px #FF0000, inset 0px -10px 10px #FF0000;
+  border-radius: 32px;
+  color: whitesmoke;
+  margin: 3vh 0vw;
+  padding: 30px;
+}
+
+.certa:onclick {
+  background: rgb(3, 102, 0);
+  box-shadow: inset 0px 10px 10px #1e9600, inset 0px -10px 10px #1e9600;
+  border-radius: 32px;
+  color: whitesmoke;
+}
+
+.ajuda {
+  justify-self: right;
+  width: 35vw;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 10px 10px rgba(255, 255, 255, 0.8), inset 0px -10px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 32px;
+  margin: 3vh 0vw;
+}
+
+img {
+  width: 8vw;
+  height: auto;
+}
+
+.grid {
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.p16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 93vh;
+  margin-top: 7vh;
+}
+
+.resp {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 70vw;
+  height: auto;
+  background: #B30000;
+  box-shadow: inset 0px 10px 10px #FF0000, inset 0px -10px 10px #FF0000;
+  border-radius: 32px;
+  color: whitesmoke;
+  margin: 5vh 5vw;
+  padding: 30px;
+}
