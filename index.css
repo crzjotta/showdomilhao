@@ -8,12 +8,27 @@ body {
   height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
-  background: #1d0f7a;
+  background: #030919;
+  background-image: url("img/15695421114058788.png");
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
   color: whitesmoke;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 li {
   list-style: none;
+}
+
+p {
+  max-width: 85vw;
+}
+
+img {
+  width: 5vw;
+  height: auto;
 }
 
 .full {
@@ -31,14 +46,23 @@ li {
   text-align: center;
 }
 
-p {
-  max-width: 85vw;
+.inicio {
+  justify-content: space-between;
+  height: 85vh;
+  padding: 10vh 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .btnInicio {
   width: 15vw;
   height: auto;
-  margin: 0vh 3vw;
+  margin: 1.5vh 2vw;
+  padding: 1.5vh 2vw;
   font-size: 20px;
   background: rgb(3, 102, 0);
   box-shadow: inset 0px 10px 10px #1e9600, inset 0px -10px 10px #1e9600;
@@ -49,7 +73,8 @@ p {
 .btnJogo {
   width: 30vw;
   height: auto;
-  margin: 0vh 3vw;
+  margin: 1.5vh 2vw;
+  padding: 1.5vh 2vw;
   font-size: 20px;
   background: rgb(3, 102, 0);
   box-shadow: inset 0px 10px 10px #1e9600, inset 0px -10px 10px #1e9600;
@@ -57,11 +82,13 @@ p {
   color: whitesmoke;
 }
 
-.p1, .p2, .p3, .p4, .p5 {
+.p {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  justify-content: space-around;
+  margin: 3vh 0vw;
 }
 
 .pergunta {
@@ -74,14 +101,8 @@ p {
   box-shadow: inset 0px 10px 10px #FF0000, inset 0px -10px 10px #FF0000;
   border-radius: 32px;
   color: whitesmoke;
-  margin: 3vh 0vw;
-  padding: 3vh 2vw;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  margin: 1.5vh 0vw;
+  padding: 1.5vh 2vw;
 }
 
 .respostas {
@@ -89,41 +110,34 @@ p {
   flex-direction: column;
 }
 
-.r1, .r2, .r3, .r4 {
+.r {
   justify-self: left;
   align-self: center;
-  text-align: center;
-  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
   height: auto;
   font-size: 25px;
   background: #B30000;
   box-shadow: inset 0px 10px 10px #FF0000, inset 0px -10px 10px #FF0000;
   border-radius: 32px;
   color: whitesmoke;
-  margin: 3vh 0vw;
-  padding: 3vh 2vw;
+  margin: 1.5vh 0vw;
+  padding: 1.5vh 1.5vw;
 }
 
-/* .certa:onclick {
-  background: rgb(3, 102, 0);
-  box-shadow: inset 0px 10px 10px #1e9600, inset 0px -10px 10px #1e9600;
-  border-radius: 32px;
-  color: whitesmoke;
-} */
+.op {
+  height: 5vh;
+}
 
 .ajuda {
   justify-self: right;
   width: 35vw;
-  height: 60vh;
-  background: rgba(255, 255, 255, 0.5);
+  height: 41vh;
+  background: rgba(255, 255, 255, 1);
   box-shadow: inset 0px 10px 10px rgba(255, 255, 255, 0.8), inset 0px -10px 10px rgba(255, 255, 255, 0.8);
   border-radius: 32px;
-  margin: 3vh 0vw;
-}
-
-img {
-  width: 8vw;
-  height: auto;
+  margin: 1.5vh 0vw;
 }
 
 .grid {
@@ -137,6 +151,7 @@ img {
 .p16 {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -146,7 +161,9 @@ img {
   justify-self: center;
   align-self: center;
   text-align: center;
-  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
   height: auto;
   font-size: 28px;
   background: #B30000;
@@ -154,5 +171,5 @@ img {
   border-radius: 32px;
   color: whitesmoke;
   margin: 3vh 0vw;
-  padding: 3vh 2vw;
+  padding: 1.5vh 1vw;
 }
